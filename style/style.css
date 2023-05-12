@@ -45,10 +45,6 @@
         position: absolute;
         top: 10px; 
     }
-/* .cart_absolute{
-    position: absolute;
-    right:8rem;
-} */
 
 
 /* hero section */
@@ -77,8 +73,28 @@
 }
 
 /* Promo */
+
 .promo-container{
-    background-color: rgb(212, 236, 180);
+    color: white;
+    z-index: 10;
+}
+.promo-bg-container{
+    background-image: url("/img/promo-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.promo-bg-container .dark-bg-effect{
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* testimonials */
