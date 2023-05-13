@@ -32,25 +32,25 @@
             </button>
             
             <!-- Nav menu -->
-            <div class="collapse navbar-collapse" id="navmenu">
+            <div class="nav_menu collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto gap-3">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">Home</a>
+                        <a href="#" class="nav-link" id="active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">Groceries</a>
+                        <a href="./pages/groceries.html" class="nav-link">Groceries</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">Juice</a>
+                        <a href="#" class="nav-link">Juice</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">About</a>
+                        <a href="#" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">Contact</a>
+                        <a href="#" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">Login<i class="fa-solid fa-user ps-2 text_green"></i></a>
+                        <a href="#" class="nav-link">Login<i class="fa-solid fa-user ps-2 text_green"></i></a>
                     </li>
                 </ul>
             </div>
@@ -95,8 +95,8 @@
                     <p>100% Guarantee</p>
                 </div>
                 <div class="col-md bg_darkGreen p-3 text-center">
-                    <h4><span><i class="fa-solid fa-money-bill-wave"></i></span> Massive Savings</h4>
-                    <p>At Lowest Price</p>
+                    <h4><span><i class="fa-solid fa-comment-dots"></i></span>Available 24/7</h4>
+                    <p>Contact us anytime</p>
                 </div>
                 <div class="col-md bg_darkGreen p-3 text-center">
                     <h4><span><i class="fa-solid fa-recycle"></i></span> Easy Returns</h4>
@@ -110,7 +110,10 @@
         <div class="container text-center">
             <div>
                 <h1>Best Selling Products</h1>
-                <img src="./img/logo-leaf-new2.png" alt="">
+                <div class="logo_leaf_container">
+                    <img src="./img/logo-leaf-new.png" alt="">
+                    <img src="./img/logo-leaf-new2.png" alt="">
+                </div>
             </div>
             <!-- product 1 -->
             <div class="row mt-5 gap-3">
@@ -129,6 +132,10 @@
                         </span>
                         <p class="product_price">200.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
                 <!-- product 2 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center">
@@ -146,6 +153,10 @@
                         </span>
                         <p class="product_price">300.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
                 <!-- product 3 -->
                 <div class="col-lg custom_card d-flex flex-column justify-content-center align-items-center">
@@ -163,6 +174,10 @@
                         </span>
                         <p class="product_price">150.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
                 <!-- product 4 -->
                 <div class="col-xl custom_card d-flex flex-column justify-content-center align-items-center">
@@ -180,6 +195,52 @@
                         </span>
                         <p class="product_price">100.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                <!-- product 5 -->
+                <div class="col-xl custom_card d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/groceries/almonds.png" class="img-fluid" alt="coffee">
+                    <div class="product_description mt-3">
+                        <p class="label_name">Groceries</p>
+                        <h5 class="product_name">Organic Almonds</h5>
+                        <!-- star rate -->
+                        <span class="rating">
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                        </span>
+                        <p class="product_price">200.00</p>
+                    </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                <!-- product 6 -->
+                <div class="col-xl custom_card d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/groceries/sesame-stick.png" class="img-fluid" alt="coffee">
+                    <div class="product_description mt-3">
+                        <p class="label_name">Groceries</p>
+                        <h5 class="product_name">Organic Sesami Sticks</h5>
+                        <!-- star rate -->
+                        <span class="rating">
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                            <i class="fa-solid fa-star color_yellow"></i>
+                        </span>
+                        <p class="product_price">200.00</p>
+                    </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -211,7 +272,10 @@
         <div class="container text-center">
             <div>
                 <h1>Trending Products</h1>
-                <img src="./img/logo-leaf-new2.png" alt="">
+                <div class="logo_leaf_container">
+                    <img src="./img/logo-leaf-new.png" alt="">
+                    <img src="./img/logo-leaf-new2.png" alt="">
+                </div>
             </div>
             <div class="row mt-5 gap-3">
                 <!-- product 1 -->
@@ -222,6 +286,10 @@
                         <h5 class="product_name">Fresh Apple Juice</h5>
                         <p class="product_price">100.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
                 <!-- product 2 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center">
@@ -231,6 +299,10 @@
                         <h5 class="product_name">Assorted Coffee</h5>
                         <p class="product_price">200.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
                 <!-- product 3 -->
                 <div class="col-lg custom_card d-flex flex-column justify-content-center align-items-center">
@@ -240,6 +312,10 @@
                         <h5 class="product_name">Fresh Orange Juice</h5>
                         <p class="product_price">100.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
                 <!-- product 4 -->
                 <div class="col-xl custom_card d-flex flex-column justify-content-center align-items-center">
@@ -249,6 +325,36 @@
                         <h5 class="product_name">Extra Virgin Olive Oil</h5>
                         <p class="product_price">150.00</p>
                     </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                <!-- product 5 -->
+                <div class="col-xl custom_card d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/juice/blackberry.png" class="img-fluid" alt="coffee">
+                    <div class="product_description mt-3">
+                        <p class="label_name">Juice</p>
+                        <h5 class="product_name">Fresh Blackberry Juice</h5>
+                        <p class="product_price">250.00</p>
+                    </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                <!-- product 6 -->
+                <div class="col-xl custom_card d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/groceries/sesame-stick.png" class="img-fluid" alt="coffee">
+                    <div class="product_description mt-3">
+                        <p class="label_name">Groceries</p>
+                        <h5 class="product_name">Organic Sesami Sticks</h5>
+                        <p class="product_price">200.00</p>
+                    </div>
+                    <!-- add to cart btn -->
+                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -258,7 +364,10 @@
     <div class="container text-center">
         <div>
             <h1>Customers Reviews</h1>
-            <img src="./img/logo-leaf-new.png" alt="">
+            <div class="logo_leaf_container">
+                <img src="./img/logo-leaf-new.png" alt="">
+                <img src="./img/logo-leaf-new2.png" alt="">
+            </div>
         </div>
         <div class="row gap-3 mt-5">
             <!-- terstimonial 1 -->
@@ -328,7 +437,7 @@
 <!-- featured brand -->
     <section class="my-5">
     <div class="container text-center">
-        <div class="row py-5 gap-5 bg-light">
+        <div class="row py-5 gap-5 brand-container">
             <div class="col-md d-flex align-items-center justify-content-center">
                 <h4 class="fw-bold">Featured brand:</h4>
             </div>
@@ -392,5 +501,12 @@
     <!-- Bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>
