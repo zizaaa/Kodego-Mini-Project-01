@@ -44,10 +44,10 @@
                         <a href="../index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./allProducts.html" class="nav-link">All Products</a>
+                        <a href="#" class="nav-link" id="active">All Products</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="active">Groceries</a>
+                        <a href="./groceries.html" class="nav-link">Groceries</a>
                     </li>
                     <li class="nav-item">
                         <a href="./juice.html" class="nav-link">Juice</a>
@@ -83,11 +83,114 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container text-center">
+            <div class="logo_img_container mb-3">
+                <img src="../img/logo-leaf-new.png" alt="">
+                <img src="../img/logo-leaf-new2.png" alt="">
+            </div>
+            <!-- carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://cdn.shopify.com/s/files/1/0645/9519/8199/collections/dals_1024x1024.jpg?v=1658571001" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0645/9519/8199/collections/different-types-flour_1024x1024.jpg?v=1658570876" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0645/9519/8199/collections/dals_1024x1024.jpg?v=1658571001" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+    <!-- side nab -->
+    <section>
+        <div class="offcanvas offcanvas-start bg_lightGreen" tabindex="-1" id="filter_nav" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold text_green" id="offcanvasExampleLabel"><span><i class="fa-solid fa-filter"></i></span> SEARCH FILTER</h5>
+                <img src="../img/logo-leaf-new2.png" alt="">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="filter_category">
+                    <h5 class="fw-bold">By Category</h5>
+                    <div class="filter_categories d-flex flex-column">
+                        <span>
+                            <input type="checkbox" value="groceries">
+                            Groceries
+                        </span>
+                        <span>
+                            <input type="checkbox" value="juice">
+                            Juice
+                        </span>
+                        <span>
+                            <input type="checkbox" value="fruits">
+                            Fruits
+                        </span>
+                        <span>
+                            <input type="checkbox" value="vegetables">
+                            Vegetables
+                        </span>
+                    </div>
+                </div>
+                <div class="price_filter_container">
+                    <h5 class="fw-bold">Price Range</h5>
+                    <div class="price_filter">
+                        <input type="number" placeholder="&#8369;MIN">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                        <input type="number" placeholder="&#8369;MAX">
+                    </div>
+                </div>
+                <div class="shipping_filter_container">
+                    <h5 class="fw-bold">Shipping Option</h5>
+                    <div class="filter_shipping d-flex flex-column">
+                        <span>
+                            <input type="checkbox" value="Standard Delivery">
+                            Standard Delivery (SPX)
+                        </span>
+                        <span>
+                            <input type="checkbox" value="J&T Express">
+                            J&T Express
+                        </span>
+                        <span>
+                            <input type="checkbox" value="XDE Logistics">
+                            XDE Logistics
+                        </span>
+                        <span>
+                            <input type="checkbox" value="Standard Local">
+                            Standard Local
+                        </span>
+                    </div>
+                </div>
+                <div class="filter_btn_container">
+                    <button class="filter_all">
+                        Filter
+                    </button>
+                </div>
+            </div>
+          </div>
+    </section>
+
     <section class="my-5">
         <div class="container text-center">
             <div class="groceries_title_holder">
-                <h1 class="text_green fw-bold">Groceries</h1>
-                <p class="text_green">"Goodness grows here - with our organic groceries."</p>
                 <div>
                     <img src="../img/logo-leaf-new.png" alt="">
                     <img src="../img/logo-leaf-new2.png" alt="">
@@ -95,21 +198,26 @@
             </div>
             <div class="row">
                 <div class="col-lg px-3">
-                    <div class="sort_container mt-5 d-flex align-items-center justify-content-between">
-                        <div class="select_sort_container">
-                            <select name="sorting" id="sorting">
-                                <option value="Default sorting">Default sorting</option>
-                                <option value="Default sorting">Sort by popularity</option>
-                                <option value="Default sorting">Sort by average rating</option>
-                                <option value="Default sorting">Sort by latest</option>
-                                <option value="Default sorting">Sort by price: low to high</option>
-                                <option value="Default sorting">Sort by price: high to low</option>
-                            </select>
+                    <div class="row">
+                        <div class="col-md sort_container mt-5 text-start">
+                            <!-- sidebar button -->
+                            <button class="sidenav_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter_nav" aria-controls="offcanvasExample">
+                                <span><i class="fa-solid fa-bars"></i></span>
+                                FILTER
+                            </button>
                         </div>
-                        <div class="page_counter_container mt-3 mt-sm-0 d-none d-sm-block">
-                            <span class="page_counter">1/9</span>
-                            <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
-                            <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        <div class="col-md sort_container mt-5 text-end">
+                            <!-- sorting -->
+                            <div class="select_sort_container">
+                                <select name="sorting" id="sorting">
+                                    <option value="Default sorting">Default sorting</option>
+                                    <option value="Default sorting">Sort by popularity</option>
+                                    <option value="Default sorting">Sort by average rating</option>
+                                    <option value="Default sorting">Sort by latest</option>
+                                    <option value="Default sorting">Sort by price: low to high</option>
+                                    <option value="Default sorting">Sort by price: high to low</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <!-- products -->
@@ -235,6 +343,132 @@
                                         <i class="fa-solid fa-star color_yellow"></i>
                                     </span>
                                     <p class="product_price">100.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 1 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/apple-juice.png" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Apple Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">100.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 2 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/orange-juice-ben-organic-BNR02-removebg-preview.png" class="img-fluid" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Orange Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">100.00</p>
+                                </div>
+                                    <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 3 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/blackberry.png" class="img-fluid" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Blackberry Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">250.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 4 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/celery-juice-bundle.png" class="img-fluid" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Celery Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">300.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 5 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/mango-juice.png" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Mango Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">200.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 6 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/soursop-juice.png" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Soursop Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">250.00</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">

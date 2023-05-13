@@ -27,7 +27,8 @@
             </div>
             <!-- cart -->
             <div class="cart_absolute d-flex d-lg-none align-items-center">
-                <div class="relative">00.00 <i class="fa-solid fa-cart-shopping ms-2 text_green"></i>
+                <div class="relative">
+                    <button class="nav_cart_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping ms-2 text_green"></i></button>
                     <span class="overlay_counter">0</span>
                 </div>
             </div>
@@ -43,7 +44,10 @@
                         <a href="../index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./groceries.html" class="nav-link" id="active">Groceries</a>
+                        <a href="./allProducts.html" class="nav-link">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./groceries.html" class="nav-link">Groceries</a>
                     </li>
                     <li class="nav-item">
                         <a href="./juice.html" class="nav-link">Juice</a>
@@ -52,21 +56,34 @@
                         <a href="./about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link"  id="active">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Login<i class="fa-solid fa-user ps-2 text_green"></i></a>
                     </li>
                 </ul>
             </div>
-            <div class="d-none d-lg-flex ms-5">
-                <div class="relative">00.00 <i class="fa-solid fa-cart-shopping ms-2 text_green"></i>
+            <div class="d-none d-lg-flex">
+                <div class="relative">
+                    <button class="nav_cart_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping ms-2 text_green"></i></button>
                     <span class="overlay_counter">0</span>
                 </div>
             </div>
         </div>
     </nav>
-    
+<!-- right nav for cart -->
+    <section>
+        <div class="offcanvas offcanvas-end bg_lightGreen" tabindex="-1" id="shoppingCart" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text_green" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex align-items-center justify-content-center">
+            <p class="fw-bold text_green">No products in the cart</p>
+            </div>s
+        </div>
+    </section>
+
     <section>
         <div class="container text-center my-5">
             <h1 class="text_green fw-bold">Get In Touch</h1>

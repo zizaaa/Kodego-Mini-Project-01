@@ -5,6 +5,7 @@
         background-color: rgb(239, 250, 220);
     }
 
+/*custom for all pages */
 /* custom colors */
     .text_green{
         color: rgb(94,134,49);
@@ -37,6 +38,7 @@
         transition: all .3s;
     }
 
+/* nav for all pages */
 /* nav */
 /* cart */
     nav .nav_menu ul li #active{
@@ -55,8 +57,13 @@
         position: absolute;
         top: 10px; 
     }
+    .nav_cart_btn{
+        border: none;
+        background-color: transparent;
+    }
 
 
+/* index html file */
 /* hero section */
     .background-img-container{
         position: absolute;
@@ -67,10 +74,10 @@
         opacity: .5;
     }
 
+/* custom card for all pages */
 /* Best Selling Section */
     .custom_card{
-        /* background-color: rgb(240, 250, 227); */
-        background-color: white;
+        background-color: rgb(235, 250, 209);
         border-radius: 10px;
         box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
         min-width: 20rem;
@@ -78,6 +85,7 @@
         min-height: 30rem;
         position: relative;
         cursor: pointer;
+        border: none;
     }
     .custom_card .cart_btn{
         position: absolute;
@@ -113,6 +121,7 @@
         font-weight: bold;
     }
 
+/* index page */
 /* Promo */
     .promo-container{
         color: white;
@@ -165,6 +174,7 @@
         color: rgb(112, 112, 112);
     }
 
+/* footer for all pages */
 /* footer */
     footer p{
         color: rgb(112, 112, 112);
@@ -183,16 +193,14 @@
 /* GROCERIES SECTION */
 /* ******* */
 
-/* Groceries intro */
-    /* .groceries_intro_container p{
-        font
-    } */
-/* sort container */
     .sort_container .select_sort_container select{
-        border: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid rgb(67, 102, 27);
+        border-left: none;
         padding: 10px 5px;
-        background-color: rgb(67, 102, 27);
-        color: white;
+        background-color: transparent;
+        color: rgb(94,134,49)
     }
     .page_counter_container button{
         border: none;
@@ -252,3 +260,67 @@
     background-color:rgb(136, 184, 82) ;
     transition: all .3s;
 }
+
+/* ======= */
+/* All product page */
+/* ======= */
+    .sidenav_btn{
+        padding: 10px 15px;
+        background-color: transparent;
+        border: 1px solid rgb(94,134,49);
+        border-left: none;
+        color: rgb(94,134,49);
+    }
+/* filter by category */
+    .filter_category{
+        color: rgb(94,134,49);
+        margin-bottom: 20px;
+    }
+
+/* filter by price */
+    .price_filter_container{
+        color: rgb(94,134,49);
+        margin-bottom: 20px;
+    }
+    .price_filter_container .price_filter{
+        display: flex; 
+        align-items: center;
+    }
+    .price_filter_container .price_filter input[type="number"]{
+        width: 5rem;
+        outline: none;
+        border-top:none ;
+        border-right: none;
+        border-bottom: 1px solid black;
+        border-left: none;
+        background-color: transparent;
+        padding: 5px 10px;
+    }
+    .price_filter_container .price_filter input[type="number"]:focus{
+        border-bottom: 1px solid rgb(114, 198, 24);
+    }
+    .price_filter_container .price_filter input[type="number"]::placeholder{
+        color: rgb(94,134,49);
+    }
+
+/* filter by shipping */
+    .shipping_filter_container{
+        color: rgb(94,134,49);
+        margin-bottom: 20px;
+    }
+
+/* filter btn */
+    .filter_btn_container button{
+        border: none;
+        text-decoration: none;
+        color: white;
+        background-color:rgb(67, 102, 27) ;
+        padding: 8px 30px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
+    }
+    .filter_btn_container button:hover{
+        color: white;
+        background-color:rgb(136, 184, 82) ;
+        transition: all .3s;
+    }

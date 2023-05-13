@@ -22,7 +22,8 @@
             </div>
             <!-- cart -->
             <div class="cart_absolute d-flex d-lg-none align-items-center">
-                <div class="relative">00.00 <i class="fa-solid fa-cart-shopping ms-2 text_green"></i>
+                <div class="relative">
+                    <button class="nav_cart_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping ms-2 text_green"></i></button>
                     <span class="overlay_counter">0</span>
                 </div>
             </div>
@@ -36,6 +37,9 @@
                 <ul class="navbar-nav ms-auto gap-3">
                     <li class="nav-item">
                         <a href="#" class="nav-link" id="active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/allProducts.html" class="nav-link">All Products</a>
                     </li>
                     <li class="nav-item">
                         <a href="./pages/groceries.html" class="nav-link">Groceries</a>
@@ -54,13 +58,26 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-none d-lg-flex ms-5">
-                <div class="relative">00.00 <i class="fa-solid fa-cart-shopping ms-2 text_green"></i>
+            <div class="d-none d-lg-flex">
+                <div class="relative">
+                    <button class="nav_cart_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping ms-2 text_green"></i></button>
                     <span class="overlay_counter">0</span>
                 </div>
             </div>
         </div>
     </nav>
+<!-- right nav for cart -->
+    <section>
+        <div class="offcanvas offcanvas-end bg_lightGreen" tabindex="-1" id="shoppingCart" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text_green" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex align-items-center justify-content-center">
+            <p class="fw-bold text_green">No products in the cart</p>
+            </div>
+        </div>
+    </section>
 <!-- hero -->
     <section class="my-5 hero_section relative">
         <div class="container">
@@ -74,7 +91,7 @@
                      <p class="mb-4">"Welcome to our organic product store! We offer all-natural, locally sourced, organic food, supplements, and household items for a healthier, happier lifestyle."</p>
                      <!-- button -->
                      <div class="btn_container">
-                        <a href="#" class="custom_btn"><span><i class="fa-solid fa-cart-shopping ms-2"></i></span> Shop Now</a>
+                        <a href="./pages/allProducts.html" class="custom_btn"><span><i class="fa-solid fa-cart-shopping ms-2"></i></span> Shop Now</a>
                      </div>
                 </div>
                 <div class="col-md mt-5"><img src="./img/organic-products-hero.png" class="img-fluid" alt=""></div>
@@ -94,7 +111,7 @@
             </div>
             <!-- product 1 -->
             <div class="row mt-5 gap-3">
-                <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center ">
                     <img src="./img/groceries/organic-coffee.png" alt="coffee">
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
@@ -114,6 +131,7 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                 </div>
+
                 <!-- product 2 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center">
                     <img src="./img/groceries/pure-organic-honey.png" class="img-fluid" alt="coffee">
@@ -237,7 +255,7 @@
                     <div class="col-md d-flex align-items-center">
                         <!-- button -->
                         <div class="btn_container">
-                            <a href="#" class="custom_btn"><span><i class="fa-solid fa-cart-shopping ms-2"></i></span> Shop Now</a>
+                            <a href="./pages/allProducts.html" class="custom_btn"><span><i class="fa-solid fa-cart-shopping ms-2"></i></span> Shop Now</a>
                          </div>
                     </div>
                 </div>
@@ -276,6 +294,7 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                 </div>
+
                 <!-- product 2 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center">
                     <img src="./img/groceries/organic-coffee.png" alt="coffee">
@@ -537,6 +556,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script>
+        ///for tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
