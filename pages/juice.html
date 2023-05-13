@@ -4,9 +4,326 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Juice - Harmony Organic</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg  navbar-light relative">
+        <div class="container">
+            <div class="text-center text-dark me-3">
+                <h4 class="m-0 text_green">Harmony</h4>
+                <h5>Organic</h5>
+            </div>
+            <!-- cart -->
+            <div class="cart_absolute d-flex d-lg-none align-items-center">
+                <div class="relative">00.00 <i class="fa-solid fa-cart-shopping ms-2 text_green"></i>
+                    <span class="overlay_counter">0</span>
+                </div>
+            </div>
+            <!-- Hamburger menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav menu -->
+            <div class="nav_menu collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./groceries.html" class="nav-link">Groceries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="active">Juice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Login<i class="fa-solid fa-user ps-2 text_green"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-flex ms-5">
+                <div class="relative">00.00 <i class="fa-solid fa-cart-shopping ms-2 text_green"></i>
+                    <span class="overlay_counter">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container text-center">
+            <div class="logo_img_container mb-3">
+                <img src="../img/logo-leaf-new.png" alt="">
+                <img src="../img/logo-leaf-new2.png" alt="">
+            </div>
+            <!-- carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5c97f5757fdcb8b6642daed2/1576615124615-RI57X0CAOJ3ZHOPJ6BD0/linked+in+header.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5c97f5757fdcb8b6642daed2/1576615124615-RI57X0CAOJ3ZHOPJ6BD0/linked+in+header.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5c97f5757fdcb8b6642daed2/1576615124615-RI57X0CAOJ3ZHOPJ6BD0/linked+in+header.jpg" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container text-center">
+            <div class="groceries_title_holder">
+                <h1 class="text_green fw-bold">Juice</h1>
+                <p class="text_green">"Sip the goodness - with our organic juices."</p>
+                <div>
+                    <img src="../img/logo-leaf-new.png" alt="">
+                    <img src="../img/logo-leaf-new2.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg px-3">
+                    <div class="sort_container mt-5 d-flex align-items-center justify-content-between">
+                        <div class="select_sort_container">
+                            <select name="sorting" id="sorting">
+                                <option value="Default sorting">Default sorting</option>
+                                <option value="Default sorting">Sort by popularity</option>
+                                <option value="Default sorting">Sort by average rating</option>
+                                <option value="Default sorting">Sort by latest</option>
+                                <option value="Default sorting">Sort by price: low to high</option>
+                                <option value="Default sorting">Sort by price: high to low</option>
+                            </select>
+                        </div>
+                        <div class="page_counter_container mt-3 mt-sm-0 d-none d-sm-block">
+                            <span class="page_counter">1/9</span>
+                            <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <!-- products -->
+                    <div class="mb-5">
+                        <div class="row gap-3">
+                            <!-- juice product 1 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/apple-juice.png" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Apple Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">100.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 2 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/orange-juice-ben-organic-BNR02-removebg-preview.png" class="img-fluid" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Orange Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">100.00</p>
+                                </div>
+                                    <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 3 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/blackberry.png" class="img-fluid" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Blackberry Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">250.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 4 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/celery-juice-bundle.png" class="img-fluid" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Celery Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">300.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 5 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/mango-juice.png" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Mango Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">200.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <!-- juice product 6 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                                <img src="../img/juice/soursop-juice.png" alt="coffee">
+                                <div class="product_description mt-3">
+                                    <p class="label_name">Juice</p>
+                                    <h5 class="product_name">Fresh Soursop Juice</h5>
+                                    <!-- star rate -->
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                        <i class="fa-solid fa-star color_yellow"></i>
+                                    </span>
+                                    <p class="product_price">250.00</p>
+                                </div>
+                                <!-- add to cart btn -->
+                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- next page button -->
+                    <div class="next_btn_container text-center">
+                        <div class="page_counter_container mt-3 mt-sm-0 ">
+                            <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <span class="page_counter">1</span>
+                            <span class="page_counter">2</span>
+                            <span class="page_counter">3</span>
+                            <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- footer -->
+<footer class="mt-5 bg-dark
+pt-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md">
+                <h4 class="text-light"><span class="text_green">Harmony</span> Organic</h4>
+                <p>We are dedicated to providing our customers with the highest quality, locally sourced, organic food, supplements, and household items. Our products are carefully selected and meticulously vetted to ensure that they meet our strict standards for quality, freshness, and sustainability. We believe that organic living is not just a trend but a way of life, and we are committed to making it accessible to everyone. Come and explore our wide selection of organic products, and discover the many benefits of living a healthier, more sustainable lifestyle."</p>
+            </div>
+            <div class="col-md d-flex flex-column gap-3 mb-3">
+                <h4 class="text-light">Quick Links</h4>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Home</a>
+                <a href="#">My account</a>
+                <a href="#">Shop</a>
+            </div>
+            <div class="col-md d-flex flex-column gap-3">
+                <h4 class="text-light">Site Links</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Offers Coupons</a>
+                <a href="#">Terms & Conditions</a>
+                <div class="d-flex flex-column gap-3 mt-3">
+                    <h4 class="text-light">Quick Links</h4>
+                    <a href="#" class="text_green">Know More About Us</a>
+                    <a href="#" class="text_green">Visit Store</a>
+                    <a href="#" class="text_green">Let's Connect</a>
+                    <a href="#" class="text_green">Locate Stores</a>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col text-light">
+                Copyright &copy; 2023 | <span class="text_green">Harmony</span> Organic
+            </div>
+            <div class="col ms-auto">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter mx-3"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
