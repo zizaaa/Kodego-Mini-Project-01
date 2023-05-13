@@ -16,7 +16,7 @@
         background-color: rgb(79, 114, 39);
     }
     .bg_lightGreen{
-        background-color: rgb(221, 245, 195)
+        background-color: rgb(221, 245, 195);
     }
     .color_yellow{
         color: rgb(230, 230, 16);
@@ -29,7 +29,7 @@
         background-color:rgb(67, 102, 27) ;
         padding: 8px 25px;
         border-radius: 5px;
-        transition: all .3s;
+        box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
     }
     .custom_btn:hover{
         color: white;
@@ -39,11 +39,12 @@
 
 /* nav */
 /* cart */
-   nav .nav_menu ul li #active{
+    nav .nav_menu ul li #active{
         color: rgb(84, 125, 36);
     }
-   nav .nav_menu ul li a{
+    nav .nav_menu ul li a{
         color: black;
+        font-weight: bold;
     }
     .overlay_counter{
         background-color: rgb(94,134,49);
@@ -69,7 +70,9 @@
 /* Best Selling Section */
     .custom_card{
         /* background-color: rgb(240, 250, 227); */
-        background-color: rgb(221, 245, 195);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
         min-width: 20rem;
         max-height: 30rem;
         min-height: 30rem;
@@ -82,16 +85,19 @@
         top: 10px;
         right: 20px;
         cursor: pointer;
-        background-color: white;
-        padding: 9px 10px;
+        background-color: rgb(241, 242, 245);
+        padding: 10px 12px;
         border: none;
         border-radius: 50%;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
         transform: scale(0);
     }
     .custom_card:hover .cart_btn{
         transition: all .2s;
         transform: scale(1);
+    }
+    .custom_card:hover{
+        box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
     }
     .custom_card img{ 
         max-height: 15rem;
@@ -159,10 +165,6 @@
         color: rgb(112, 112, 112);
     }
 
-/* featured brand */
-    .brand-container{
-        background-color: rgb(240, 250, 227);
-    }
 /* footer */
     footer p{
         color: rgb(112, 112, 112);
@@ -203,3 +205,50 @@
         padding: 2px 10px;
     }
 
+
+/* ====== */
+/* Contact */
+/* ====== */
+.contact_container .contact_details .form_container form{
+    width: 100%;
+}
+.contact_container .contact_details .form_container form input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(203, 235, 169);
+    outline: none;
+    background-color: transparent;
+}
+.contact_container .contact_details .form_container form input[type="text"]:focus,.contact_container .contact_details .form_container form textarea:focus{
+    border-bottom: 1px solid rgb(111, 166, 53);
+}
+
+.contact_container .contact_details .form_container form input[type="text"]::placeholder,.contact_container .contact_details .form_container form textarea::placeholder{
+    color: rgb(94,134,49);
+}
+.contact_container .contact_details .form_container form textarea{
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(203, 235, 169);
+    background-color: transparent;
+    min-height: 10rem;
+    max-height: 20rem;
+}
+.contact_container .contact_details .form_container form button{
+    color: white;
+    border: none;
+    background-color:rgb(67, 102, 27);
+    padding: 10px 0;
+}
+.contact_container .contact_details .form_container form button:hover{
+    color: white;
+    background-color:rgb(136, 184, 82) ;
+    transition: all .3s;
+}
