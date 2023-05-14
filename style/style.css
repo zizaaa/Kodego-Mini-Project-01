@@ -27,7 +27,7 @@
     .custom_btn{
         text-decoration: none;
         color: white;
-        background-color:rgb(67, 102, 27) ;
+        background-color:rgb(67, 102, 27);
         padding: 8px 25px;
         border-radius: 5px;
         box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
@@ -321,6 +321,98 @@
     }
     .filter_btn_container button:hover{
         color: white;
+        background-color:rgb(136, 184, 82);
+        transition: all .3s;
+    }
+
+/* Log in and sign up form */
+    .login_form{
+        padding: 30px;
+        background-color:rgb(225, 253, 194);
+        box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.2);
+
+    }
+    .login_form input{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgb(153, 153, 153);
+        background-color: transparent;
+        padding: 10px 5px;
+        margin-bottom: 20px;
+    }
+    .login_form input:focus{
+        border-bottom: 1px solid rgb(114, 198, 24);
+    }
+    .login_form input::placeholder{
+        color: rgb(94,134,49);;
+    }
+    .login_form button[type="submit"]{
+        border: none;
+        margin: 10px 0;
+        padding: 10px 0;
+        color: white;
+        background-color:rgb(67, 102, 27);
+        box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
+    }
+    .login_form button[type="submit"]:hover{
+        color: white;
         background-color:rgb(136, 184, 82) ;
         transition: all .3s;
+    }
+    .login_form .forgot_pswd_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .login_form .forgot_pswd_container a{
+        text-decoration: none;
+        color: rgb(94,134,49);
+    }
+
+    .login_form .form_divider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .login_form .form_divider_line{
+        border: none;
+        border-bottom: 1px solid rgb(136, 184, 82);
+        height: 1px;
+        width: 100%;
+    }
+    .login_form .login_by_soc{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .login_form .login_by_soc button[type="button"]{
+        border: 1px solid rgb(136, 184, 82);
+        padding: 5px 25px;
+    }
+    /* for socialmedia icon colors */
+    .login_form .login_by_soc button[type="button"] .icon_blue{
+        color: blue;
+    }
+    .login_form .login_by_soc button[type="button"] .icon_green{
+        color: green;
+    }
+
+    /* register link */
+    .register_link a{
+        color: rgb(94,134,49);
+    }
+    .register_link p{
+        color: rgb(152, 152, 152);
+    }
+
+    /* terms and conditions for sign up for */
+    .terms_condition{
+        font-size: 12px;
+    }
+    .terms_condition a{
+        text-decoration: none;
+        color: rgb(94,134,49);
     }
