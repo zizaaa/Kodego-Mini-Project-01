@@ -76,6 +76,7 @@
 
 /* custom card for all pages */
 /* Best Selling Section */
+
     .custom_card{
         background-color: rgb(235, 250, 209);
         border-radius: 10px;
@@ -84,8 +85,8 @@
         max-height: 30rem;
         min-height: 30rem;
         position: relative;
-        cursor: pointer;
         border: none;
+        cursor: pointer;
     }
     .custom_card .cart_btn{
         position: absolute;
