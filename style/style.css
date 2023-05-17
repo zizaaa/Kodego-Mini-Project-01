@@ -80,9 +80,10 @@
         background-color: rgb(235, 250, 209);
         border-radius: 10px;
         box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
-        min-width: 20rem;
-        max-height: 30rem;
-        min-height: 30rem;
+        min-width: 16rem;
+        max-width: 16rem;
+        max-height: 20rem;
+        min-height: 20rem;
         position: relative;
         border: none;
         cursor: pointer;
@@ -108,10 +109,10 @@
         box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
     }
     .custom_card img{ 
-        max-height: 15rem;
-        min-height: 15rem;
-        min-width: 15rem;
-        max-width: 15rem;
+        max-height: 10rem;
+        min-height: 10rem;
+        min-width: 10rem;
+        max-width: 10rem;
     }
     .custom_card .product_description .label_name{
         color: rgb(116, 148, 80);
@@ -272,6 +273,39 @@
         color: rgb(94,134,49);
     }
 /* filter by category */
+    /* filter by search */
+    .search-input{
+        color: rgb(94,134,49);
+        padding: 20px 0;
+    }
+    .search-input input[type="text"]{
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 5px 5px;
+        background-color: transparent;
+        outline: none;
+    }
+    .search-input input[type="text"]:focus{
+        border-bottom: 1px solid rgb(114, 198, 24);
+    }
+    .search-input input[type="text"]::placeholder{
+        color: rgb(94,134,49);
+    }
+    .search-input button{
+        border: none;
+        text-decoration: none;
+        color: white;
+        background-color:rgb(67, 102, 27) ;
+        padding: 8px 30px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
+    }
+    .search-input button:hover{
+        color: white;
+        background-color:rgb(136, 184, 82);
+        transition: all .3s;
+    }
+
     .filter_category{
         color: rgb(94,134,49);
         margin-bottom: 20px;
