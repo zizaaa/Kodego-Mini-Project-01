@@ -87,43 +87,42 @@
                     <img src="../img/logo-leaf-new2.png" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg px-3">
-                    <div class="sort_container mt-5 d-flex align-items-center justify-content-between">
-                        <div class="select_sort_container">
-                            <select name="sorting" id="sorting">
-                                <option value="Default sorting">Default sorting</option>
-                                <option value="Default sorting">Sort by popularity</option>
-                                <option value="Default sorting">Sort by average rating</option>
-                                <option value="Default sorting">Sort by latest</option>
-                                <option value="Default sorting">Sort by price: low to high</option>
-                                <option value="Default sorting">Sort by price: high to low</option>
-                            </select>
-                        </div>
-                        <div class="page_counter_container mt-3 mt-sm-0 d-none d-sm-block">
-                            <span class="page_counter">1/9</span>
-                            <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
-                            <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-                    </div>
+            <div class="sort_container mt-5 d-flex align-items-center justify-content-between">
+                <div class="select_sort_container">
+                    <select name="sorting" id="sorting">
+                        <option value="Default sorting">Default sorting</option>
+                        <option value="Default sorting">Sort by popularity</option>
+                        <option value="Default sorting">Sort by average rating</option>
+                        <option value="Default sorting">Sort by latest</option>
+                        <option value="Default sorting">Sort by price: low to high</option>
+                        <option value="Default sorting">Sort by price: high to low</option>
+                    </select>
+                </div>
+                <div class="page_counter_container mt-3 mt-sm-0 d-none d-sm-block">
+                    <span class="page_counter">1/9</span>
+                    <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
                     <!-- products -->
-                    <div class="mb-5">
-                        <div class="row justify-content-center gap-3">
+                        <div class="row justify-content-center gap-3 my-5">
                             <!-- grocery product 1 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/groceries/organic-coffee.png" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Groceries</p>
                                     <h6 class="product_name">Assorted Coffee</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">12.5k sold</span>
                                     </span>
-                                    <p class="product_price">200.00</p>
+                                    <p class="product_price m-0">&#8369;200.00</p>
+                                    <p class="product_location m-0">Pili, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -131,41 +130,45 @@
                                 </button>
                             </div>
                             <!-- grocery product 2 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/groceries/pure-organic-honey.png" class="img-fluid" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Groceries</p>
                                     <h6 class="product_name">Fresh Organic Honey</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">18.5k sold</span>
                                     </span>
-                                    <p class="product_price">300.00</p>
+                                    <p class="product_price m-0">&#8369;300.00</p>
+                                    <p class="product_location m-0">Bula, Camarines Sur</p>
                                 </div>
-                                    <!-- add to cart btn -->
+                                <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </button>
                             </div>
                             <!-- grocery product 3 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/groceries/virgin-olive-oil.png" class="img-fluid" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Groceries</p>
                                     <h6 class="product_name">Extra Virgin Olive Oil</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">20.5k sold</span>
                                     </span>
-                                    <p class="product_price">150.00</p>
+                                    <p class="product_price m-0">&#8369;150.00</p>
+                                    <p class="product_location m-0">Binanuanan, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -173,20 +176,22 @@
                                 </button>
                             </div>
                             <!-- grocery product 4 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/groceries/chilipowder.png" class="img-fluid" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Groceries</p>
                                     <h6 class="product_name">Organic Chilli powder</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">15.5k sold</span>
                                     </span>
-                                    <p class="product_price">100.00</p>
+                                    <p class="product_price m-0">&#8369;100.00</p>
+                                    <p class="product_location m-0">Pili, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -194,20 +199,22 @@
                                 </button>
                             </div>
                             <!-- grocery product 5 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/groceries/Cashews.png" alt="coffee">
-                                <div class="product_description mt-3">
+                                <div class="product_description">
                                     <p class="label_name">Groceries</p>
                                     <h6 class="product_name">Organic Raw Cashew</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">20.5k sold</span>
                                     </span>
-                                    <p class="product_price">200.00</p>
+                                    <p class="product_price m-0">&#8369;150.00</p>
+                                    <p class="product_location m-0">Binanuanan, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -215,20 +222,22 @@
                                 </button>
                             </div>
                             <!-- grocery product 6 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/groceries/Organic-Chillies.png" alt="coffee">
-                                <div class="product_description mt-3">
+                                <div class="product_description">
                                     <p class="label_name">Groceries</p>
                                     <h6 class="product_name">Handpicked Red Chillies</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">20.5k sold</span>
                                     </span>
-                                    <p class="product_price">100.00</p>
+                                    <p class="product_price m-0">&#8369;150.00</p>
+                                    <p class="product_location m-0">Binanuanan, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -236,7 +245,6 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
                     <!-- next page button -->
                     <div class="next_btn_container text-center">
                         <div class="page_counter_container mt-3 mt-sm-0 ">
@@ -247,8 +255,6 @@
                             <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
     </section>
 <!-- footer -->

@@ -87,85 +87,88 @@
                     <img src="../img/logo-leaf-new2.png" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg px-3">
-                    <div class="sort_container mt-5 d-flex align-items-center justify-content-between">
-                        <div class="select_sort_container">
-                            <select name="sorting" id="sorting">
-                                <option value="Default sorting">Default sorting</option>
-                                <option value="Default sorting">Sort by popularity</option>
-                                <option value="Default sorting">Sort by average rating</option>
-                                <option value="Default sorting">Sort by latest</option>
-                                <option value="Default sorting">Sort by price: low to high</option>
-                                <option value="Default sorting">Sort by price: high to low</option>
-                            </select>
-                        </div>
-                        <div class="page_counter_container mt-3 mt-sm-0 d-none d-sm-block">
-                            <span class="page_counter">1/9</span>
-                            <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
-                            <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-                    </div>
+            <div class="sort_container mt-5 d-flex align-items-center justify-content-between">
+                <div class="select_sort_container">
+                    <select name="sorting" id="sorting">
+                        <option value="Default sorting">Default sorting</option>
+                        <option value="Default sorting">Sort by popularity</option>
+                        <option value="Default sorting">Sort by average rating</option>
+                        <option value="Default sorting">Sort by latest</option>
+                        <option value="Default sorting">Sort by price: low to high</option>
+                        <option value="Default sorting">Sort by price: high to low</option>
+                    </select>
+                </div>
+                <div class="page_counter_container mt-3 mt-sm-0 d-none d-sm-block">
+                    <span class="page_counter">1/9</span>
+                    <button class="chevron_left_btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
                     <!-- products -->
-                    <div class="mb-5">
-                        <div class="row justify-content-center gap-3">
+                        <div class="row justify-content-center my-5 gap-3">
                             <!-- juice product 1 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
-                                <img src="../img/juice/apple-juice.png" alt="coffee">
+                                    <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
+                                        <img src="../img/juice/apple-juice.png" class="img-fluid" alt="coffee">
+                                        <div class="product_description mt-3">
+                                            <p class="label_name">Juice</p>
+                                            <h6 class="product_name">Fresh Apple Juice</h6>
+                                            <!-- star rate -->
+                                            <span class="product_rating">
+                                                <i class="fa-solid fa-star color_yellow"></i>
+                                                <i class="fa-solid fa-star color_yellow"></i>
+                                                <i class="fa-solid fa-star color_yellow"></i>
+                                                <i class="fa-solid fa-star color_yellow"></i>
+                                                <i class="fa-solid fa-star color_yellow"></i>
+                                                <span class="product_sold">100k sold</span>
+                                            </span>
+                                            <p class="product_price m-0">&#8369;100.00</p>
+                                            <p class="product_location m-0">Partido</p>
+                                        </div>
+                                        <!-- add to cart btn -->
+                                        <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                            <!-- juice product 2 -->
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
+                                <img src="../img/juice/orange-juice-ben-organic-BNR02-removebg-preview.png" class="img-fluid" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Juice</p>
-                                    <h6 class="product_name">Fresh Apple Juice</h6>
+                                    <h6 class="product_name">Fresh Orange Juice</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">200k sold</span>
                                     </span>
-                                    <p class="product_price">100.00</p>
+                                    <p class="product_price m-0">&#8369;100.00</p>
+                                    <p class="product_location m-0">Pawili, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </button>
                             </div>
-                            <!-- juice product 2 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
-                                <img src="../img/juice/orange-juice-ben-organic-BNR02-removebg-preview.png" class="img-fluid" alt="coffee">
-                                <div class="product_description mt-3">
-                                    <p class="label_name">Juice</p>
-                                    <h6 class="product_name">Fresh Orange Juice</h6>
-                                    <!-- star rate -->
-                                    <span class="rating">
-                                        <i class="fa-solid fa-star color_yellow"></i>
-                                        <i class="fa-solid fa-star color_yellow"></i>
-                                        <i class="fa-solid fa-star color_yellow"></i>
-                                        <i class="fa-solid fa-star color_yellow"></i>
-                                        <i class="fa-solid fa-star color_yellow"></i>
-                                    </span>
-                                    <p class="product_price">100.00</p>
-                                </div>
-                                    <!-- add to cart btn -->
-                                <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
                             <!-- juice product 3 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/juice/blackberry.png" class="img-fluid" alt="coffee">
-                                <div class="product_description mt-3">
+                                <div class="product_description">
                                     <p class="label_name">Juice</p>
                                     <h6 class="product_name">Fresh Blackberry Juice</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">200k sold</span>
                                     </span>
-                                    <p class="product_price">250.00</p>
+                                    <p class="product_price m-0">&#8369;100.00</p>
+                                    <p class="product_location m-0">Pawili, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -173,20 +176,22 @@
                                 </button>
                             </div>
                             <!-- juice product 4 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/juice/celery-juice-bundle.png" class="img-fluid" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Juice</p>
                                     <h6 class="product_name">Fresh Celery Juice</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">200k sold</span>
                                     </span>
-                                    <p class="product_price">300.00</p>
+                                    <p class="product_price m-0">&#8369;300.00</p>
+                                    <p class="product_location m-0">Unknown</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -194,20 +199,22 @@
                                 </button>
                             </div>
                             <!-- juice product 5 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/juice/mango-juice.png" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Juice</p>
                                     <h6 class="product_name">Fresh Mango Juice</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">300k sold</span>
                                     </span>
-                                    <p class="product_price">200.00</p>
+                                    <p class="product_price m-0">&#8369;200.00</p>
+                                    <p class="product_location m-0">Pili, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -215,20 +222,22 @@
                                 </button>
                             </div>
                             <!-- juice product 6 -->
-                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center mt-5 text-center">
+                            <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
                                 <img src="../img/juice/soursop-juice.png" alt="coffee">
                                 <div class="product_description mt-3">
                                     <p class="label_name">Juice</p>
                                     <h6 class="product_name">Fresh Soursop Juice</h6>
                                     <!-- star rate -->
-                                    <span class="rating">
+                                    <span class="product_rating">
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
                                         <i class="fa-solid fa-star color_yellow"></i>
+                                        <span class="product_sold">300k sold</span>
                                     </span>
-                                    <p class="product_price">250.00</p>
+                                    <p class="product_price m-0">&#8369;250.00</p>
+                                    <p class="product_location m-0">Pili, Camarines Sur</p>
                                 </div>
                                 <!-- add to cart btn -->
                                 <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
@@ -236,7 +245,6 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
                     <!-- next page button -->
                     <div class="next_btn_container text-center">
                         <div class="page_counter_container mt-3 mt-sm-0 ">
@@ -247,8 +255,6 @@
                             <button class="chevron_right_btn"><i class="fa-solid fa-chevron-right"></i></button>
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
     </section>
 <!-- footer -->
