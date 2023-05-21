@@ -101,7 +101,6 @@
         min-height: 25rem;
         position: relative;
         border: none;
-        cursor: pointer;
     }
     @media(max-width:991px){
         .custom_card{
@@ -182,13 +181,15 @@
     .custom_card:hover .quick_view_holder{
         transform: translateY(-0.1px);
         transition: all .2s;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     .custom_card .quick_view_holder {
         position: absolute;
         left:0;
         right: 0;
         bottom: 0;
-        background-color:rgb(106, 147, 60);
+        background-color:rgb(67, 102, 27);
         text-align: center;
         color: white;
         border: none;
