@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./style/style.css">
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Home - Harmony Organic</title>
 </head>
 <body>
@@ -38,13 +37,29 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link" id="active">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown dropdown_container d-none d-lg-flex">
+                        <button class="dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li class="dropdown-item">
+                                <a href="./pages/allProducts.html" class="nav-link">All Products</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./pages/groceries.html" class="nav-link">Groceries</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./pages/juice.html" class="nav-link">Juice</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-flex d-lg-none">
                         <a href="./pages/allProducts.html" class="nav-link">All Products</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex d-lg-none">
                         <a href="./pages/groceries.html" class="nav-link">Groceries</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex d-lg-none">
                         <a href="./pages/juice.html" class="nav-link">Juice</a>
                     </li>
                     <li class="nav-item">
@@ -112,7 +127,12 @@
             <!-- product 1 -->
             <div class="row justify-content-center gap-3 mt-5">
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/groceries/organic-coffee.png" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/groceries/organic-coffee.png" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
                         <h6 class="product_name">Assorted Coffee</h6>
@@ -127,16 +147,25 @@
                         </span>
                         <p class="product_price m-0">&#8369;200.00</p>
                         <p class="product_location m-0">Pili, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
 
                 <!-- product 2 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/groceries/pure-organic-honey.png" class="img-fluid" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/groceries/pure-organic-honey.png" class="img-fluid" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
                         <h6 class="product_name">Fresh Organic Honey</h6>
@@ -151,15 +180,24 @@
                         </span>
                         <p class="product_price m-0">&#8369;300.00</p>
                         <p class="product_location m-0">Bula, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
                 <!-- product 3 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/groceries/virgin-olive-oil.png" class="img-fluid" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/groceries/virgin-olive-oil.png" class="img-fluid" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
                         <h6 class="product_name">Extra Virgin Olive Oil</h6>
@@ -174,15 +212,24 @@
                         </span>
                         <p class="product_price m-0">&#8369;150.00</p>
                         <p class="product_location m-0">Binanuanan, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
                 <!-- product 4 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/groceries/chilipowder.png" class="img-fluid" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/groceries/chilipowder.png" class="img-fluid" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
                         <h6 class="product_name">Organic Chilli powder</h6>
@@ -197,10 +244,14 @@
                         </span>
                         <p class="product_price m-0">&#8369;100.00</p>
                         <p class="product_location m-0">Pili, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
             </div>
@@ -241,7 +292,12 @@
             <div class="row justify-content-center mt-5 gap-3">
                 <!-- product 1 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/juice/apple-juice.png" class="img-fluid" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/juice/apple-juice.png" class="img-fluid" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Juice</p>
                         <h6 class="product_name">Fresh Apple Juice</h6>
@@ -256,16 +312,25 @@
                         </span>
                         <p class="product_price m-0">&#8369;100.00</p>
                         <p class="product_location m-0">Partido</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
 
                 <!-- product 2 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/groceries/organic-coffee.png" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/groceries/organic-coffee.png" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
                         <h6 class="product_name">Assorted Coffee</h6>
@@ -280,15 +345,24 @@
                         </span>
                         <p class="product_price m-0">&#8369;200.00</p>
                         <p class="product_location m-0">Pili, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
                 <!-- product 3 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/juice/orange-juice-ben-organic-BNR02-removebg-preview.png" class="img-fluid" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/juice/orange-juice-ben-organic-BNR02-removebg-preview.png" class="img-fluid" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Juice</p>
                         <h6 class="product_name">Fresh Orange Juice</h6>
@@ -303,15 +377,24 @@
                         </span>
                         <p class="product_price m-0">&#8369;100.00</p>
                         <p class="product_location m-0">Pawili, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
                 <!-- product 4 -->
                 <div class="col-md custom_card d-flex flex-column justify-content-center align-items-center text-start">
-                    <img src="./img/groceries/virgin-olive-oil.png" class="img-fluid" alt="coffee">
+                    <div class="products_img_container">
+                        <img src="./img/groceries/virgin-olive-oil.png" class="img-fluid" alt="coffee">
+                        <button class="quick_view_holder">
+                            Quick View
+                        </button>
+                    </div>
                     <div class="product_description mt-3">
                         <p class="label_name">Groceries</p>
                         <h6 class="product_name">Extra Virgin Olive Oil</h6>
@@ -326,10 +409,14 @@
                         </span>
                         <p class="product_price m-0">&#8369;150.00</p>
                         <p class="product_location m-0">Binanuanan, Camarines Sur</p>
+                        <!-- add to cart btn -->
+                        <button type="button" class="addToCart">
+                            Add to cart
+                        </button>
                     </div>
-                    <!-- add to cart btn -->
-                    <button type="button" class="btn cart_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <!-- add to wishlist -->
+                    <button type="button" class="btn wishlist_btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
+                        <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
             </div>
@@ -363,8 +450,7 @@
                 </div>
                 <div class="user-holder d-flex align-items-center justify-content-center">
                     <img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle me-3" alt="">
-                    <h5 class="user-name">
-                        Emily Davis</h5>
+                    <h5 class="user-name">Emily Davis</h5>
                 </div>
             </div>
             <!-- testimonial 2 -->
